@@ -10,7 +10,7 @@ public class binarySearch {
         int ans = -1;
 
         while (st <= end) {
-            int mid = (st + end) / 2;
+            int mid = st + (end - st) / 2;
             if (target < arr[mid]) {
                 end = mid - 1;
             } else if (target > arr[mid]) {
@@ -21,5 +21,20 @@ public class binarySearch {
             }
         }
         System.out.println(ans);
+    }
+}
+
+// binary search using recursion
+
+class binarySearch2 {
+    public static void binarysearch(int[] arr) {
+
+    }
+
+    public static void main(String[] args) {
+        int[] arr = { -1, 0, 3, 4, 5, 9, 12 };
+        int target = -1;
+
+        binarysearch(arr);
     }
 }
